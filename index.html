@@ -1,0 +1,51 @@
+<html>
+    <head>
+            <link rel="stylesheet" type="text/css"href="main.css">       
+             <title>Title</title>
+    </head>
+    <body> 
+        <div class="text">
+                <h2>Alternative version for the classic game "Rock-Scissors-Paper" but with an elemental twist!</h2>   
+                <h3>Instructions: Just select one of the three options, the machine will randomly select another, the best of 5 wins!</h3>
+        </div>
+        
+        <div class="images">
+                <!--Fire-grass arrow -->
+                <div class="arrow" id="fireArrow" >
+                    
+                    <div class="line"></div>
+                    strong
+                    <div class="point"></div>
+                </div>
+                <!--Grass-Water Arrow -->
+                <div class="arrow" id="grassArrow">
+                    <div class="line"></div>
+                    <span>Strong</span>
+                    <div class="point"></div>
+                </div>
+                <!--Water-Fire Arrow -->
+                <div class="arrow" id="waterArrow">
+                    <div class="line"></div>
+                    strong
+                    <div class="point"></div>
+                </div>
+                <div id="top">
+                        <img class="static" id="fire" onclick="singlePlay('fire',computerPlay())">
+                </div>
+                <div id="bot">
+                        <img  class="static" id="water" onclick="singlePlay('water',computerPlay())">
+                        <img  class="static" id="grass" onclick="singlePlay('grass',computerPlay())">
+                </div>
+        </div>
+        <div class="text">
+                <p id="user">User Victories: 0</p>
+                <p id="machine">Machine Victories: 0</p>
+                <p id="draw">Draws: 0</p>
+        </div>
+        
+        <script src="main.js">
+        </script>
+
+    </body>
+    <footer>Done by Diego Escalante</footer>
+</html>

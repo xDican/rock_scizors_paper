@@ -1,0 +1,76 @@
+.text{
+    text-align: center;
+}
+.arrow {
+    width:115px;
+    
+}
+.line {
+    margin-top:14px;
+    width:85px;
+    background:blue;
+    height:10px;
+    position: absolute;
+    text-align: center;
+}
+.point {    
+    width: 0;
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid blue;
+    float:right;
+}
+.static{
+border-radius: 50%;
+height: 150px;
+width: 150px; 
+margin-top: 5%;
+}
+#fire{
+    content: url("images/fire_static.gif");
+    margin-left: 44.5%;       
+}
+#water{
+    content: url("images/water_static.gif");
+    margin-left: 33%;
+}
+#grass{
+    content: url("images/grass_static.gif");
+    margin-left: 11%;
+}
+#fireArrow{
+    margin-left: 52%;
+    margin-top: 15.5%;
+    transform: rotate(50deg);
+    position: absolute;
+    text-align: center;
+}
+#grassArrow{
+    margin-left: 44%;
+    margin-top: 24%;
+    transform: rotate(180deg);
+    position: absolute;
+    text-align: center;
+}
+#waterArrow{
+    margin-left: 39%;
+    margin-top: 16%;
+    transform: rotate(-50deg);
+    position: absolute;
+    text-align: center;
+    
+}
+
+#fire:hover{
+    cursor: pointer;
+    content: url("images/fire.gif");
+}
+#water:hover{
+    cursor: pointer;
+    content: url("images/water.gif");
+}
+#grass:hover{
+    cursor: pointer;
+    content: url("images/grass.gif");
+}
